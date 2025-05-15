@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezervasyon Sayfası - Casa Pet</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>🪴 Rezervasyon Sayfası</h1>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="rezerve.html">Rezervasyon Sayfası</a></li>
+        <li><a href="fiyatlar.html">Fiyat Tablosu</a></li>
+        <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+        <li><a href="hakkımızda.html">Hakkımızda</a></li>
+        <li><a href="iletişim.html">İletişim</a></li>
+        <li><a href="oyun.html">Kedi Oyunu</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Rezervasyon Sayfasına Hoş Geldiniz...</h1>
+    <form action="tesekkur.html" method="get">
+      <fieldset>
+        <legend>Kayıt Formu</legend>
+        <label for="isim">Adınız:</label><br>
+        <input type="text" id="isim" name="isim"><br><br>
+        <label for="soyisim">Soyadınız:</label><br>
+        <input type="text" id="soyisim" name="soyisim"><br><br>
+        <label for="numara">Telefon Numarası:</label><br>
+        <input type="text" id="numara" name="numara"><br><br>
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <p>Konaklayacak Hayvanın Türünü Seçiniz</p>
+        <input type="radio" id="kedi" name="tur" value="Kedi">
+        <label for="kedi">Kedi</label><br><br>
+        <input type="radio" id="kopek" name="tur" value="Köpek">
+        <label for="kopek">Köpek</label><br><br>
+        
+        <p>Giriş Tarihi:</p>
+        <input type="date" name="giris_tarihi"><br><br>
+        <p>Çıkış Tarihi:</p>
+        <input type="date" name="cikis_tarihi"><br><br>
+        
+        <p>Ek Hizmetler (<a href="fiyatlar.html">Fiyatları Görmek İçin Tıklayabilirsiniz</a>)</p>
+        <input type="checkbox" id="hizmet1" name="hizmet[]" value="Banyo">
+        <label for="hizmet1">Banyo</label><br>
+        <input type="checkbox" id="hizmet2" name="hizmet[]" value="Veteriner Kontrolü">
+        <label for="hizmet2">Veteriner Kontrolü</label><br>
+        <input type="checkbox" id="hizmet3" name="hizmet[]" value="Oyun Zamanı">
+        <label for="hizmet3">Oyun Zamanı</label><br><br>
+        
+        <input type="submit" value="Gönder"><br><br>
+        <input type="reset" value="Temizle">
+      </fieldset>
+    </form>
+  </main>
+   <footer class="site-footer">
+    <p>&copy; 2025 Casa Pet</p>
+  </footer>
+</body>
+</html>
